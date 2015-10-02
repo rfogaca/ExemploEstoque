@@ -13,12 +13,28 @@ require_once './Venda.php';
     </head>
     <body>
         <?php
-        $estoque = new Estoque();
-        $estoque->inicializaEstoque();
-
-        $produto = array("Codigo" => 01, "Preco" => null, "Nome" => "Produto 3", "Quantidade" => 100, "Unidade" => "kg");
-        $estoque->adicionaProduto($produto);
+		/// ÁREA PARA MANIPULAR INFORMAÇÕES
         
+		$estoque = new Estoque();
+        $estoque->inicializaEstoque();
+		
+	//	$produto = new itensVenda();
+		//$produto->inicializaEstoque();
+		
+		$estoque->imprimeProdutos();
+        $novoProduto = array("Codigo" => 01, "Preco" => null, "Nome" => "Pão", "Quantidade" => 100, "Unidade" => "kg");
+        $estoque->adicionaProduto($novoProduto);
+		$novoProduto = array("Codigo" => 02, "Preco" => null, "Nome" => "Manteiga", "Quantidade" => 200, "Unidade" => "uni");
+        $estoque->adicionaProduto($novoProduto);
+		$estoque->imprimeProdutos();
+		$indiceProduto = $estoque->consultaProduto("Pão");
+		$estoque->imprimeBuscaProduto($indiceProduto);
+		$estoque->removeProduto("Manteiga");
+		$estoque->imprimeProdutos();
+		echo "<br>";
+		
+		//$produto->localizaCodigo("Pão");
+        /// ÁREA PARA MANIPULAR INFORMAÇÕES
         ?>
     </body>
 </html>

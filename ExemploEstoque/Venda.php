@@ -9,6 +9,8 @@ class Venda {
     public function inicializa() {
         $this->data = date('d-m-Y');
         $this->hora = date('H:i');
+		$this->codigo = null;
+		$this->itensVenda = null;
     }
     
     public function adicionaItem() {

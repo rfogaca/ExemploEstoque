@@ -3,14 +3,14 @@
 class Produto {
 
     private $codigo;
-    public $listaPrecos;
+    private $listaPrecos;
     private $nome;
     private $quantidade;
     private $unidade;
 
     public function inicializaProduto() {
         $this->codigo = null;
-        $this->listaPrecos = null;
+        $this->listaPrecos = array();
         $this->nome = null;
         $this->quantidade = null;
         $this->unidade = null;
@@ -44,12 +44,12 @@ class Produto {
         
     }
 
-    public function verificaPrecoPreco() {
+    public function verificaPreco() {
         
     }
 
-    public function verificaProduto() {
-        
+    public function verificaProduto($verificaProduto) {
+
     }
 
 }

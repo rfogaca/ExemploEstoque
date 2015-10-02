@@ -1,0 +1,8 @@
+##### Instruções para rodar a aplicação #####
+
+- A aplicação foi escrita em PHP, sendo assim, é necessário rodar os programas necessários.
+	Eu utilizei o pacote Wamp para isso.
+
+- Nessa aplicação, não foram criadas telas para a manipulação das informações. Sendo assim,
+foi utilizada a chamada das funções na página index.php, com um exemplo de manipulação dessas
+informações. Esse exemplo se encontra entre os comentários /// ÁREA PARA MANIPULAR INFORMAÇÕES

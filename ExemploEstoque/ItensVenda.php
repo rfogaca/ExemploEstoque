@@ -1,6 +1,7 @@
 <?php
+require_once './Estoque.php';
 
-class ItensVenda {
+class ItensVenda extends Estoque {
 
     private $data;
     private $item;
@@ -8,7 +9,10 @@ class ItensVenda {
     private $venda;
 
     public function inicializa() {
-        
+        $this->data = null;
+		$this->item = null;
+		$this->quantidade = null;
+		$this->venda = null;
     }
 
     public function alocaVenda() {
@@ -20,7 +24,7 @@ class ItensVenda {
     }
 
     public function localizaCodigo() {
-        
+
     }
 
     public function printOn() {

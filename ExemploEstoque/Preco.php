@@ -7,8 +7,11 @@ class Preco {
     private $item;
     private $preco;
 
-    public function inicializa($dataInicial, $dataFinal) {
-        
+    public function inicializa() {
+        $this->dataInicial = null;
+		$this->dataFinal = null;
+		$this->item = null;
+		$this->preco = null;
     }
 
     public function alocaItem() {
