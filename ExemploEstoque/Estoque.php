@@ -1,13 +1,17 @@
 <?php
 require_once './Produto.php';
 
-class Estoque {
+class Estoque extends Produto {
 
     private $empresa;
     private $listaDeProdutos;
     private $listaDeVendas;
-
-    public function inicializa($empresa, $listaDeProdutos, $listaDeVendas) {
+    
+    public function inicializaEstoque() {
+        
+        $empresa = "Empresa Exemplificada";
+        $listaDeProdutos = array("Produto 1","Produto 2");
+        $listaDeVendas = array("Venda 1","Venda 2");
         $this->empresa = $empresa;
         $this->listaDeProdutos = $listaDeProdutos;
         $this->listaDeVendas = $listaDeVendas;
@@ -16,9 +20,12 @@ class Estoque {
     }
 
     public function adicionaProduto($produto) {
-        array_push($this->listaDeProdutos, $produto);
+        $novoProduto = array_push($this->listaDeProdutos, $produto);
         
-        //var_dump($this->listaDeProdutos);
+                
+        $InicializaProduto = new Produto();
+        $InicializaProduto->inicializaProduto($novoProduto);
+        var_dump($this->listaDeProdutos);
     }
 
     public function adicionaVenda() {

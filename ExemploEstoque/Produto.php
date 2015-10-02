@@ -8,7 +8,7 @@ class Produto {
     private $quantidade;
     private $unidade;
 
-    public function inicializa($unidade, $quantidade) {
+    public function inicializaProduto($produto) {
         
     }
 
