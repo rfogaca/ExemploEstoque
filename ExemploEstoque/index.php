@@ -16,7 +16,7 @@ require_once './Venda.php';
         $estoque = new Estoque();
         $estoque->inicializaEstoque();
 
-        $produto = "Produto 3";
+        $produto = array("Codigo" => 01, "Preco" => null, "Nome" => "Produto 3", "Quantidade" => 100, "Unidade" => "kg");
         $estoque->adicionaProduto($produto);
         
         ?>

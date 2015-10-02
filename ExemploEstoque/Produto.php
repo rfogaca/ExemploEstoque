@@ -3,16 +3,20 @@
 class Produto {
 
     private $codigo;
-    private $listaPRecos;
+    public $listaPrecos;
     private $nome;
     private $quantidade;
     private $unidade;
 
-    public function inicializaProduto($produto) {
-        
+    public function inicializaProduto() {
+        $this->codigo = null;
+        $this->listaPrecos = null;
+        $this->nome = null;
+        $this->quantidade = null;
+        $this->unidade = null;
     }
 
-    public function adicionaPreco() {
+    public function adicionaPreco($dataInicial, $dataFinal, $item, $preco) {
         
     }
 

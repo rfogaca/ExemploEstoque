@@ -10,8 +10,8 @@ class Estoque extends Produto {
     public function inicializaEstoque() {
         
         $empresa = "Empresa Exemplificada";
-        $listaDeProdutos = array("Produto 1","Produto 2");
-        $listaDeVendas = array("Venda 1","Venda 2");
+        $listaDeProdutos = array();
+        $listaDeVendas = array();
         $this->empresa = $empresa;
         $this->listaDeProdutos = $listaDeProdutos;
         $this->listaDeVendas = $listaDeVendas;
