@@ -6,14 +6,22 @@ class Venda {
     private $hora;
     private $itensVenda;
         
-    public function inicializa() {
+    public function inicializaVenda() {
         $this->data = date('d-m-Y');
         $this->hora = date('H:i');
 		$this->codigo = null;
 		$this->itensVenda = null;
     }
-    
-    public function adicionaItem() {
+	
+	public function adicionaItem() {
+        
+    }
+	
+	public function adicionaVenda() {
+        
+    }
+	
+	public function consultaVenda() {
         
     }
     
@@ -21,6 +29,10 @@ class Venda {
         
     }
     
+	public function imprimeVendas() {
+        
+    }
+	
     public function removeItem() {
         
     }
@@ -30,6 +42,10 @@ class Venda {
     }
     
     public function verificaVenda() {
+        
+    }
+	
+	public function removeVenda() {
         
     }
 }

@@ -1,7 +1,6 @@
 <?php
-require_once './Estoque.php';
 
-class ItensVenda extends Estoque {
+class ItensVenda {
 
     private $data;
     private $item;

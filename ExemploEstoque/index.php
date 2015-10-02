@@ -15,25 +15,25 @@ require_once './Venda.php';
         <?php
 		/// ÁREA PARA MANIPULAR INFORMAÇÕES
         
-		$estoque = new Estoque();
-        $estoque->inicializaEstoque();
+		$produto = new Produto();
+        $produto->inicializaProduto();
 		
-	//	$produto = new itensVenda();
-		//$produto->inicializaEstoque();
+		$produto->imprimeProdutos();
 		
-		$estoque->imprimeProdutos();
         $novoProduto = array("Codigo" => 01, "Preco" => null, "Nome" => "Pão", "Quantidade" => 100, "Unidade" => "kg");
-        $estoque->adicionaProduto($novoProduto);
-		$novoProduto = array("Codigo" => 02, "Preco" => null, "Nome" => "Manteiga", "Quantidade" => 200, "Unidade" => "uni");
-        $estoque->adicionaProduto($novoProduto);
-		$estoque->imprimeProdutos();
-		$indiceProduto = $estoque->consultaProduto("Pão");
-		$estoque->imprimeBuscaProduto($indiceProduto);
-		$estoque->removeProduto("Manteiga");
-		$estoque->imprimeProdutos();
-		echo "<br>";
+        $produto->adicionaProduto($novoProduto);
 		
-		//$produto->localizaCodigo("Pão");
+		$novoProduto = array("Codigo" => 02, "Preco" => null, "Nome" => "Manteiga", "Quantidade" => 200, "Unidade" => "uni");
+        $produto->adicionaProduto($novoProduto);
+		
+		$produto->imprimeProdutos();
+		
+		$indiceProduto = $produto->consultaProduto("Pão");
+		$produto->imprimeBuscaProduto($indiceProduto);
+		$produto->removeProduto("Manteiga");
+		
+		$produto->imprimeProdutos();
+
         /// ÁREA PARA MANIPULAR INFORMAÇÕES
         ?>
     </body>
