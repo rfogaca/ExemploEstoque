@@ -1,10 +1,10 @@
 <?php
 
 class Venda {
-    public $codigo;
-    public $data;
-    public $hora;
-    public $itensVenda;
+    private $codigo;
+    private $data;
+    private $hora;
+    private $itensVenda;
         
     public function inicializa() {
         $this->data = date('d-m-Y');

@@ -1,10 +1,10 @@
 <?php
 
 class ItensVenda {
-    public $data;
-    public $item;
-    public $quantidade;
-    public $venda;
+    private $data;
+    private $item;
+    private $quantidade;
+    private $venda;
 
 
     public function inicializa() {
